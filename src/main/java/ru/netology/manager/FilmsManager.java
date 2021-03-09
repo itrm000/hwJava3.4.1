@@ -5,6 +5,10 @@ import ru.netology.domain.FilmItem;
 public class FilmsManager {
     private FilmItem[] items;  // инициализируем массив из объектов класса FilmItem
 
+    public FilmsManager (){
+        System.out.println("Конструктор по умолчанию");
+    }
+
     //  конструктор
     public FilmsManager(int itmesTuOutput) { // (количество объектов для выведения)
         // длина массива куда будем перекладывать последние фильмы

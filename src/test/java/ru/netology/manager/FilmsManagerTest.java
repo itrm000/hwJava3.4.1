@@ -41,6 +41,11 @@ public class FilmsManagerTest {
     }
 
     @Test
+    public void testFilmManagerEmpty(){
+        FilmsManager filmsManager = new FilmsManager();
+    }
+
+    @Test
     public void testGetLastFilmsOneOK() {
         FilmItem[] actual = filmsManager1.getLastFilms(1);
         FilmItem[] expected = new FilmItem[]{filmItem12};
